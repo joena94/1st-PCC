@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>폴-사이버챌린지</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="menu-fixed">
+      <div class="navSize">
+        <div class="logo">
+          <a href="#"><p>폴-사이버챌린지</p></a>
+        </div>
+        <ul class="menu">
+          <li><a href="register.php">참가신청</a></li>
+        </ul>
+      </div>
+    </nav>
+    <article id="outBox1">
+      <div id="main">
+
+        <div class="contestDate">
+          <p>참가신청 ㅣ 2021. 8. 24(화) - 2021. 9. 2(목)</p>
+        </div>
+        <div class="dDay">
+          <span>대회 ㅣ 2021. 9. 10(금)</span>
+          <p>D-<?php
+          $nDate = date("Y-m-d",time());
+          $valDate = Trim('2021-09-11'); // ('yyyy-mm-dd' 형식)
+          $leftDate = intval((strtotime($nDate)-strtotime($valDate)) / 86400) * -1;
+          echo str_pad($leftDate, 2, "0", STR_PAD_LEFT);
+
+          ?></p>
+        </div>
+        <div class="host">
+          <img src="assets/img/host.png" alt="">
+        </div>
+        <p class="contact">문의 : admin@whitehatcontest.org</p>
+      </div>
+    </article>
+    <footer>
+      <div class="footer">
+        <img src="img/footer.png" alt="">
+      </div>
+    </footer>
+  </body>
+</html>

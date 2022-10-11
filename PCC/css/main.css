@@ -1,0 +1,118 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+/* OUTbOX 1 */
+body,html{
+  height: 100%;
+  margin: 0;
+}
+
+/* 헤더 */
+nav{
+    background: white;
+    height: 60px;
+    width: 100%;
+    font-size: 100%;
+    position: fixed;
+}
+
+nav .navSize{
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+nav .navSize .logo a{
+  text-decoration: none;
+  color: black;
+}
+nav .navSize .logo p{
+  font-size: 24px;
+  font-weight: bold;
+  height: 60px;
+  padding-top: 10px;
+}
+
+nav .navSize{
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .navSize .menu{
+  list-style: none;
+  height: 30px;
+  margin-top: 15px;
+  display: flex;
+  justify-content:flex-end;
+
+}
+nav .navSize .menu li a{
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* 헤더 끝 */
+#outBox1{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#outBox1 #main{
+  width: 1280px;
+  margin: 0 auto;
+  padding-top:505px;
+}
+
+#outBox1 #main .contestDate{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+}
+#outBox1 #main .dDay{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 64px;
+}
+#outBox1 #main .dDay span{
+  font-size: 24px;
+  font-weight: normal;
+}
+#outBox1 #main .host{
+  display: flex;
+  justify-content: center;
+}
+#outBox1 #main .host img{
+  width: 450px;
+}
+#outBox1 #main .contact{
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* footer */
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #dfdfdf;
+}
+footer .footer{
+  text-align: center;
+}
+footer .footer img{
+  margin-top: 10px;
+}
